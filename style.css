@@ -1,0 +1,33 @@
+
+@keyframes dour {
+  from { transform: translate(0px,-2000px); }
+  to { transform: translate(0px,0px) ;  }
+}
+
+@keyframes ahbit {
+  from { transform: translate(0px,0px); }
+  to { transform: translate(0px,300px) ;  }
+}
+
+.team-member{
+  animation: dour 2s;
+  transition: ease-in;
+}
+.team-member:hover{
+  animation: ahbit 1s;
+  transition: ease-in;
+  box-shadow: 10px 10px 10px;
+}
+
+.team-member-desc{
+  display: none;
+ 
+}
+.display{
+  display: inline-block;
+}
+
+.team{
+  width: 60%;
+  margin-left: 20%
+}

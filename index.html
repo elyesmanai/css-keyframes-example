@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="team">
+          <img class="team-member" onmouseover="change(this)" src='images/elyes.jpg'   width="19%" />
+          <img class="team-member" src='images/bacour.jpg'  width="19%" />
+          <img class="team-member" src='images/arsslen.jpg' width="19%" />
+          <img class="team-member" src='images/mahmoud.jpg' width="19%" />
+          <img class="team-member" src='images/oumaima.jpg' width="19%" />
+        </div>
+        <audio id="scream" src="scream.mp3"></audio>
+       
+
+</body>
+  <script>
+      var audio = document.getElementById('scream');
+     function change(el){
+      el.setAttribute('src','images/elyes2.png');
+      audio.currentTime=2.85;
+      audio.play();
+      setTimeout(function(){audio.pause()},2000)
+     }
+
+   
+  </script>
+</html>
